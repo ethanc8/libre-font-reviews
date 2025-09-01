@@ -1,0 +1,11 @@
+# Hayagriva YAML bibliography
+# https://github.com/typst/hayagriva/blob/main/docs/file-format.md
+
+tex-gyre-recent-advances:
+  type: Article
+  author: 
+    - Jackowski, Bogusław
+    - Nowacki, Janusz M.
+    - Ludwichowski, Jerzy B.
+  title: "Recent advances in {LUG's} font projects"
+  url: https://www.gust.org.pl/projects/e-foundry/tex-gyre/afp05.pdf
