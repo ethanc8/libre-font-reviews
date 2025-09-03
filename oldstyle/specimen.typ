@@ -143,6 +143,10 @@
 #let Specimen-Standard-Latin(font, name) = SpecimenPage(font: font)[
 === #name specimen: Latin
 
+#AlphabetBox[
+  #Alphabet-Latin
+]
+
 #box[#SpecimenText-English]
 
 #box[#SpecimenText-French]
@@ -153,14 +157,14 @@
 
 #box[#SpecimenText-Fuzhounese]
 
-#AlphabetBox[
-  #Alphabet-Latin
-]
-
 ]
 
 #let Specimen-Standard-EuropeanLatin(font, name) = SpecimenPage(font: font)[
 === #name specimen: Latin
+
+#AlphabetBox[
+  #Alphabet-Latin
+]
 
 #box[#SpecimenText-English]
 
@@ -168,34 +172,38 @@
 
 #box[#SpecimenText-Polish]
 
-#AlphabetBox[
-  #Alphabet-Latin
-]
-
 ]
 
 #let Specimen-Standard-Greek(font, name) = SpecimenPage(font: font)[
 === #name specimen: Greek
 
-#box[#SpecimenText-Greek]
-
-#box[#SpecimenText-AncientGreek]
-
 #AlphabetBox[
   #Alphabet-Greek
 ]
+
+#box[#SpecimenText-Greek]
+
+#box[#SpecimenText-AncientGreek]
 
 ]
 
 #let Specimen-Standard-Cyrillic(font, name) = SpecimenPage(font: font)[
 === #name specimen: Cyrillic
 
+#AlphabetBox[
+  #set text(lang: "ru")
+  #Alphabet-Cyrillic
+]
+
 #box[#SpecimenText-Russian]
+
+#AlphabetBox[
+  #set text(lang: "bg")
+  #Alphabet-Cyrillic
+]
 
 #box[#SpecimenText-Bulgarian]
 
-#AlphabetBox[
-  #Alphabet-Cyrillic
-]
+
 ]
 

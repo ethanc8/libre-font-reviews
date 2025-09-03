@@ -93,7 +93,203 @@ Text fractions (`#textfrac` in #LaTeX) are also supported.
 #let Specimen-EBGaramond-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-EBGaramond, "EB Garamond")
 #Specimen-EBGaramond-Cyrillic
 
-= Latin specimen sheets (summary)
+#let Font-Junicode = (
+  font: "Junicode"
+)
+
+#[
+#set text(..Font-Junicode)
+
+== Junicode
+
+]
+
+#let Specimen-Junicode-Latin = specimen.Specimen-Standard-Latin(Font-Junicode, "Junicode")
+#Specimen-Junicode-Latin
+
+#let Specimen-Junicode-Greek = specimen.Specimen-Standard-Greek(Font-Junicode, "Junicode")
+#Specimen-Junicode-Greek
+
+#let Font-Elstob = (
+  font: "ElstobD"
+)
+
+#[
+#set text(..Font-Elstob)
+
+== Elstob
+
+]
+
+#let Specimen-Elstob-Latin = specimen.Specimen-Standard-Latin(Font-Elstob, "Elstob")
+#Specimen-Elstob-Latin
+
+#let Specimen-Elstob-Greek = specimen.Specimen-Standard-Greek(Font-Elstob, "Elstob")
+#Specimen-Elstob-Greek
+
+#let Font-Castoro = (
+  font: "Castoro"
+)
+
+#[
+#set text(..Font-Castoro)
+
+== Castoro
+
+]
+
+#let Specimen-Castoro-Latin = specimen.Specimen-Standard-EuropeanLatin(Font-Castoro, "Castoro")
+#Specimen-Castoro-Latin
+
+#let Font-Palatino = (
+  font: "Domitian"
+)
+
+#let Font-Heraklit = (
+  font: "GFS Heraklit"
+)
+
+#[
+#set text(..Font-Palatino)
+
+== Palatino
+
+]
+
+#let Specimen-Palatino-Latin = specimen.Specimen-Standard-EuropeanLatin(Font-Palatino, "Palatino (Domitian)")
+#Specimen-Palatino-Latin
+
+#let Specimen-Palatino-Greek = specimen.Specimen-Standard-Greek(Font-Heraklit, "Palatino (Heraklit)")
+#Specimen-Palatino-Greek
+
+#let Specimen-Palatino-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-Palatino, "Palatino (Domitian)")
+#Specimen-Palatino-Cyrillic
+
+#let Font-Spectral = (
+  font: "Spectral"
+)
+
+#[
+#set text(..Font-Spectral)
+
+== Spectral
+
+]
+
+// It does actually support Vietnamese and Fuzhounese, but it takes up too much space
+#let Specimen-Spectral-Latin = specimen.Specimen-Standard-EuropeanLatin(Font-Spectral, "Spectral")
+#Specimen-Spectral-Latin
+
+#let Specimen-Spectral-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-Spectral, "Spectral")
+#Specimen-Spectral-Cyrillic
+
+#let Font-Vollkorn = (
+  font: "Vollkorn"
+)
+
+#[
+#set text(..Font-Vollkorn)
+
+== Vollkorn
+
+]
+
+#let Specimen-Vollkorn-Latin = specimen.Specimen-Standard-Latin(Font-Vollkorn, "Vollkorn")
+#Specimen-Vollkorn-Latin
+
+#let Specimen-Vollkorn-Greek = specimen.Specimen-Standard-Greek(Font-Vollkorn, "Vollkorn")
+#Specimen-Vollkorn-Greek
+
+#let Specimen-Vollkorn-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-Vollkorn, "Vollkorn")
+#Specimen-Vollkorn-Cyrillic
+
+#let Font-Crimson = (
+  font: "Crimson Pro"
+)
+
+#[
+#set text(..Font-Crimson)
+
+== Crimson Pro
+
+]
+
+#let Specimen-Crimson-Latin = specimen.Specimen-Standard-Latin(Font-Crimson, "Crimson Pro")
+#Specimen-Crimson-Latin
+
+#let Font-Alegreya = (
+  font: "Alegreya"
+)
+
+#[
+#set text(..Font-Alegreya)
+
+== Alegreya
+
+]
+
+#let Specimen-Alegreya-Latin = specimen.Specimen-Standard-Latin(Font-Alegreya, "Alegreya")
+#Specimen-Alegreya-Latin
+
+#let Specimen-Alegreya-Greek = specimen.Specimen-Standard-Greek(Font-Alegreya, "Alegreya")
+#Specimen-Alegreya-Greek
+
+#let Specimen-Alegreya-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-Alegreya, "Alegreya")
+#Specimen-Alegreya-Cyrillic
+
+#let Font-Piazzolla = (
+  font: "Piazzolla"
+)
+
+#[
+#set text(..Font-Piazzolla)
+
+== Piazzolla
+
+]
+
+#let Specimen-Piazzolla-Latin = specimen.Specimen-Standard-Latin(Font-Piazzolla, "Piazzolla")
+#Specimen-Piazzolla-Latin
+
+#let Specimen-Piazzolla-Greek = specimen.Specimen-Standard-Greek(Font-Piazzolla, "Piazzolla")
+#Specimen-Piazzolla-Greek
+
+#let Specimen-Piazzolla-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-Piazzolla, "Piazzolla")
+#Specimen-Piazzolla-Cyrillic
+
+= Specimen sheets - summary
+
+== Latin
 
 #Specimen-Bembo-Latin
 #Specimen-EBGaramond-Latin
+#Specimen-Junicode-Latin
+#Specimen-Elstob-Latin
+#Specimen-Castoro-Latin
+
+#Specimen-Palatino-Latin
+#Specimen-Spectral-Latin
+#Specimen-Vollkorn-Latin
+#Specimen-Crimson-Latin
+#Specimen-Alegreya-Latin
+#Specimen-Piazzolla-Latin
+
+== Greek
+
+#Specimen-EBGaramond-Greek
+#Specimen-Junicode-Greek
+#Specimen-Elstob-Greek
+
+#Specimen-Palatino-Greek
+#Specimen-Vollkorn-Greek
+#Specimen-Alegreya-Greek
+#Specimen-Piazzolla-Greek
+
+== Cyrillic
+
+#Specimen-EBGaramond-Cyrillic
+#Specimen-Palatino-Cyrillic
+#Specimen-Spectral-Cyrillic
+#Specimen-Vollkorn-Cyrillic
+#Specimen-Alegreya-Cyrillic
+#Specimen-Piazzolla-Cyrillic
