@@ -55,7 +55,7 @@
   // https://www.cambridge.org/core/services/aop-cambridge-core/content/view/31774A6EB2D510A1AAC7B0027FE520F4/S0025100311000181a.pdf/vietnamese-hanoi-vietnamese.pdf
 ]
 
-#let SpecimenText-Fuzhounese = [
+#let SpecimenText-Hokkien = [
   // #set text(lang: "fzho") // 4-letter code, not supported
   #smallcaps[Hók-ciŭ-uâ:]
   Ô sŏ̤h huòi, Báe̤k-hŭng gâe̤ng Nĭk-tàu duŏh hī dó̤i căng, káng diê-nè̤ng buōng-sê̤ṳ duâi.
@@ -67,6 +67,13 @@
   Guó nék-òng, Nĭk-tàu chók lì.
   Iĕk-pĕ̤-pĕ̤ sāi sāi lĭk sŏ̤h puŏh, hī ciéh lā̤ giàng-duô gì nè̤ng ché̤ṳk-káik cêu ciŏng hī iông duâi-ĭ táung lŏ̤h lì._
   Cī-hâ Báe̤k-hŭng cêu nâ diông sìng-nêng, lâng gá nè̤ng diē-sié, gó sê Nĭk-tàu gì buōng-sê̤ṳ duâi.
+]
+
+#let SpecimenText-Hokkien = [
+  #set text(lang: "el")
+  #smallcaps[Bân-lâm-gú:]
+  Goân-khí-thâu Siōng-tè chhòng-chō thiⁿ kap tōe. Tōe sī khang-khang hūn-tūn; chhim-ian ê bin-chiūⁿ o͘-àm; Siōng-tè ê Sîn ūn-tōng tī chúi-bīn. Siōng-tè kóng, Tio̍h ū kng, chiū ū kng. Siōng-tè khòaⁿ kng, sī hó; Siōng-tè chiong kng àm pun-khui. Siōng-tè kiò hit ê kng chòe Ji̍t, kiò àm chòe Mî. Ū ê-hng ū chá-khí sī thâu chi̍t-ji̍t.
+  // https://en.wikipedia.org/wiki/Pe%CC%8Dh-%C5%8De-j%C4%AB#Texts
 ]
 
 #let SpecimenText-Greek = [
@@ -125,12 +132,12 @@
 #let Alphabet-Cyrillic = [
   А Ә Б В Г Һ Д Џ Ѕ Е Ж З Ѕ И І Ј К \
   Л М Н О П С Т У Ф Х Ц Ч Ш Ь Э Ю Я \
-  а ә б в г һ д џ ѕ е ж з ѕ и і ј к 
+  а ә б в г һ д џ ѕ е ж з ѕ и і ј к \
   л м н о п с т у ф х ц ч ш ь э ю я
 
   _А Ә Б В Г Һ Д Џ Ѕ Е Ж З Ѕ И І Ј К \
   Л М Н О П С Т У Ф Х Ц Ч Ш Ь Э Ю Я \
-  а ә б в г һ д џ ѕ е ж з ѕ и і ј к 
+  а ә б в г һ д џ ѕ е ж з ѕ и і ј к \
   л м н о п с т у ф х ц ч ш ь э ю я_
   // #smallcaps[
   //   а ә б в г һ д џ ѕ е ж з ѕ и і ј к \
@@ -155,7 +162,7 @@
 
 #box[#SpecimenText-Vietnamese]
 
-#box[#SpecimenText-Fuzhounese]
+#box[#SpecimenText-Hokkien]
 
 ]
 
@@ -175,6 +182,29 @@
 ]
 
 #let Specimen-Standard-Greek(font, name) = SpecimenPage(font: font)[
+=== #name specimen: Greek
+
+#AlphabetBox[
+  #Alphabet-Greek
+]
+
+#box[#SpecimenText-Greek]
+
+#box[#SpecimenText-AncientGreek]
+
+#text(style: "italic")[
+  #AlphabetBox[
+    #Alphabet-Greek
+  ]
+
+  #box[#SpecimenText-Greek]
+
+  #box[#SpecimenText-AncientGreek]
+]
+
+]
+
+#let Specimen-Standard-Greek-NoItalic(font, name) = SpecimenPage(font: font)[
 === #name specimen: Greek
 
 #AlphabetBox[

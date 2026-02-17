@@ -159,7 +159,7 @@ Text fractions (`#textfrac` in #LaTeX) are also supported.
 #let Specimen-Palatino-Latin = specimen.Specimen-Standard-EuropeanLatin(Font-Palatino, "Palatino (Domitian)")
 #Specimen-Palatino-Latin
 
-#let Specimen-Palatino-Greek = specimen.Specimen-Standard-Greek(Font-Heraklit, "Palatino (Heraklit)")
+#let Specimen-Palatino-Greek = specimen.Specimen-Standard-Greek-NoItalic(Font-Heraklit, "Palatino (Heraklit)")
 #Specimen-Palatino-Greek
 
 #let Specimen-Palatino-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-Palatino, "Palatino (Domitian)")
