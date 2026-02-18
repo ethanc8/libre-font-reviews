@@ -153,6 +153,113 @@ Noto Sans LGC was designed to harmonize well with the non-LGC Noto fonts for oth
 #let Specimen-DroidSans-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-DroidSans, "Droid Sans")
 #Specimen-DroidSans-Cyrillic
 
+
+#let Font-Arimo = (
+  font: "Arimo"
+)
+
+#let Font-LiberationSans = (
+  font: "Liberation Sans"
+)
+
+#let Font-Liberastika = (
+  font: "Liberastika"
+)
+
+#let Font-LibraSans = (
+  font: "Libra Sans"
+)
+
+#[
+#set text(..Font-Arimo)
+
+= Ascender Sans derivatives
+
+*Arimo:* #gf-link("https://fonts.google.com/specimen/Arimo") #link("https://github.com/notofonts/Arimo")[\[GitHub repo (notofonts)\]] #link("https://github.com/googlefonts/Arimo")[\[GitHub repo (googlefonts)\]]
+
+*Liberation Sans:* #gh-link("https://github.com/liberationfonts/liberation-fonts")
+
+*Liberastika:* #link("https://code.google.com/archive/p/liberastika/")[\[Google Code repo\]]
+
+*Libra Sans:* #gh-link("https://github.com/StefanPeev/Libra-Sans") #website-link("https://localfonts.eu/freefonts/bulgarian-cyrillic/libra-sans/")
+
+Ascender Sans was designed by Steve Matteson at Ascender Corporation as a font metric-compatible with Arial. Its design is heavily influenced by Helvetica and Arial, but improved for better on-screen legibility.
+
+#quote(attribution: [
+  #link("https://fonts.google.com/specimen/Arimo")[Arimo page on Google Fonts]
+])[
+  Arimo was designed by Steve Matteson as an innovative, refreshing sans serif design that is metrically compatible with Arial™. Arimo offers improved on-screen readability characteristics and the pan-European WGL character set and solves the needs of developers looking for width-compatible fonts to address document portability across platforms.
+]
+
+In 2007, Red Hat commissioned a derivative of Ascender Sans, named *Liberation Sans*, from Ascender Corporation, for use as part of the "Liberation" series of metric-compatible fonts, and released it under a modified version of the GPL. Due to its additional restrictions beyond the GPL, many distributions did not want to include it, but it was very popular with users. In 2010, Oracle commissioned *Liberation Sans Narrow* to be metric-compatible with Arial Narrow.
+
+In 2012, Google commissioned a derivative of Ascender Sans, named *Arimo*, from Ascender Corporation, for use as part of the "Croscore" series of metric-compatible fonts, and released it under the SIL OFL. Later that year, the Liberation project rebased itself on Arimo, losing its narrow variant. Although Arimo had a much larger glyph set than Liberation Sans 1.x, many users preferred the hinting (antialiasing) of Liberation Sans 1.x to the hinting of Arimo.
+
+In 2013, Google released an updated version of Arial with improved hinting under the Apache-2.0 license.
+
+There have been derivatives focusing on Cyrillic support, explained below.
+
+== Features
+
+#quote(attribution: [
+  #link("https://fonts.google.com/specimen/Arimo")[Arimo page on Google Fonts]
+])[
+  The family includes 54 styles in three widths and nine weights, as well as italics, suitable for large and small digital and print use. Customizable weights and widths are available via the included variable font (GX) file.
+]
+
+== Design
+
+See #link("https://type.today/en/journal/neo#Arimo")[type.today's design review]:
+
+#quote[
+  A sans serif metrically compatible with Arial, but with improved on-screen readability. Designed to solve the needs of developers looking for width-compatible fonts across platforms.
+
+  Greater legibility is achieved through larger x-height and squarish bowls, and a more open aperture, which all allowed for more white space — those are reasonable, working solutions. Rather high curve quality — yet, somewhat imperfect forms and metrics, mainly because of following Arial’s metrics.
+
+  Arimo has an impressive glyph set and extensive language support — Latin, Cyrillic, Greek, Hebrew. Only tabular figures; fractions; sets of super- and subscripts.
+]
+
+== Language support
+
+
+=== Cyrillic
+
+In #link("https://type.today/en/journal/neo#Arimo")[type.today's design review], they criticize the Cyrillic of Arimo, with some issues being caused by being a clone of the poorly-designed Arial Cyrillic and some issues of its own.
+
+In 2009, Andrej Panov modified Liberation Sans 1.x to create *Liberastika*. The metrics of Liberation Sans were not preserved due to the poor design of Arial Cyrillic.
+
+In 2017, Stefan Peev modified Liberation Sans 2.x to create *Libra Sans*, which supports the Bulgarian local glyph forms.
+
+=== Harmony with Noto Sans non-LGC
+
+Noto Sans LGC was designed to harmonize well with the non-LGC Noto fonts for other scripts.
+
+]
+
+#let Specimen-Arimo-Latin = specimen.Specimen-Standard-Latin(Font-Arimo, "Arimo")
+#Specimen-Arimo-Latin
+
+#let Specimen-LiberationSans-Latin = specimen.Specimen-Standard-Latin(Font-LiberationSans, "Liberation Sans")
+#Specimen-LiberationSans-Latin
+
+#let Specimen-Arimo-Greek = specimen.Specimen-Standard-Greek(Font-Arimo, "Arimo")
+#Specimen-Arimo-Greek
+
+#let Specimen-LiberationSans-Greek = specimen.Specimen-Standard-Greek(Font-LiberationSans, "Liberation Sans")
+#Specimen-LiberationSans-Greek
+
+#let Specimen-Arimo-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-Arimo, "Arimo")
+#Specimen-Arimo-Cyrillic
+
+#let Specimen-LiberationSans-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-LiberationSans, "Liberation Sans")
+#Specimen-LiberationSans-Cyrillic
+
+#let Specimen-LibraSans-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-LibraSans, "LibraSans")
+#Specimen-LibraSans-Cyrillic
+
+#let Specimen-Liberastika-Cyrillic = specimen.Specimen-Standard-Cyrillic(Font-Liberastika, "Liberastika")
+#Specimen-Liberastika-Cyrillic
+
 = Specimen sheets - summary
 
 == Latin
@@ -160,13 +267,21 @@ Noto Sans LGC was designed to harmonize well with the non-LGC Noto fonts for oth
 #Specimen-Barlow-Latin
 #Specimen-NotoSans-Latin
 #Specimen-DroidSans-Latin
+#Specimen-Arimo-Latin
+#Specimen-LiberationSans-Latin
 
 == Greek
 
 #Specimen-NotoSans-Greek
 #Specimen-DroidSans-Greek
+#Specimen-Arimo-Greek
+#Specimen-LiberationSans-Greek
 
 == Cyrillic
 
 #Specimen-NotoSans-Cyrillic
 #Specimen-DroidSans-Cyrillic
+#Specimen-Arimo-Cyrillic
+#Specimen-LiberationSans-Cyrillic
+#Specimen-LibraSans-Cyrillic
+#Specimen-Liberastika-Cyrillic
